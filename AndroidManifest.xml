@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ch.sebastianhaeni.remotecontrol"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="ch.sebastianhaeni.remotecontrol.ServerSelectionActivity"
+            android:label="@string/title_activity_server_selection" >
+            <intent-filter android:label="@string/app_name" >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ch.sebastianhaeni.remotecontrol.VolumeActivity"
+            android:label="@string/title_activity_volume" >
+        </activity>
+        <activity
+            android:name="ch.sebastianhaeni.remotecontrol.MouseActivity"
+            android:label="@string/title_activity_mouse" >
+        </activity>
+
+        <service
+            android:name="ch.sebastianhaeni.remotecontrol.UDPListenerService"
+            android:label="UDPListenerService" />
+
+        <activity
+            android:name="ch.sebastianhaeni.remotecontrol.KeyboardActivity"
+            android:label="@string/title_activity_keyboard" >
+        </activity>
+    </application>
+
+</manifest>
