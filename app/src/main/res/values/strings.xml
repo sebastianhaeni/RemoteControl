@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Remote Control</string>
+    <string name="action_mouse">Mouse</string>
+    <string name="action_volume">Volume</string>
+    <string name="action_keyboard">Keyboard</string>
+    <string name="title_activity_mouse">Mouse</string>
+    <string name="title_activity_volume">Volume</string>
+    <string name="title_activity_keyboard">Keyboard</string>
+    <string name="left">Left</string>
+    <string name="right">Right</string>
+
+</resources>
